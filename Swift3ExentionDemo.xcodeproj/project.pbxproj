@@ -14,6 +14,10 @@
 		B00318A61E095B6800CFC81A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B00318A41E095B6800CFC81A /* LaunchScreen.storyboard */; };
 		B00318B11E095B6900CFC81A /* Swift3ExentionDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B00318B01E095B6900CFC81A /* Swift3ExentionDemoTests.swift */; };
 		B00318BC1E095B6900CFC81A /* Swift3ExentionDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B00318BB1E095B6900CFC81A /* Swift3ExentionDemoUITests.swift */; };
+		B00318CB1E095BB000CFC81A /* DictionaryToModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B00318CA1E095BB000CFC81A /* DictionaryToModel.swift */; };
+		B00318CD1E095C8B00CFC81A /* BaseFoundation.swift in Sources */ = {isa = PBXBuildFile; fileRef = B00318CC1E095C8B00CFC81A /* BaseFoundation.swift */; };
+		B00318CF1E09634900CFC81A /* test.json in Resources */ = {isa = PBXBuildFile; fileRef = B00318CE1E09634900CFC81A /* test.json */; };
+		B00318D31E0963E500CFC81A /* TestModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B00318D21E0963E500CFC81A /* TestModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +51,10 @@
 		B00318B71E095B6900CFC81A /* Swift3ExentionDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Swift3ExentionDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B00318BB1E095B6900CFC81A /* Swift3ExentionDemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Swift3ExentionDemoUITests.swift; sourceTree = "<group>"; };
 		B00318BD1E095B6900CFC81A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B00318CA1E095BB000CFC81A /* DictionaryToModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DictionaryToModel.swift; sourceTree = "<group>"; };
+		B00318CC1E095C8B00CFC81A /* BaseFoundation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseFoundation.swift; sourceTree = "<group>"; };
+		B00318CE1E09634900CFC81A /* test.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = test.json; sourceTree = "<group>"; };
+		B00318D21E0963E500CFC81A /* TestModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,12 +105,15 @@
 		B003189A1E095B6800CFC81A /* Swift3ExentionDemo */ = {
 			isa = PBXGroup;
 			children = (
+				B00318C91E095B7B00CFC81A /* Swift3Exention */,
 				B003189B1E095B6800CFC81A /* AppDelegate.swift */,
 				B003189D1E095B6800CFC81A /* ViewController.swift */,
 				B003189F1E095B6800CFC81A /* Main.storyboard */,
 				B00318A21E095B6800CFC81A /* Assets.xcassets */,
 				B00318A41E095B6800CFC81A /* LaunchScreen.storyboard */,
 				B00318A71E095B6800CFC81A /* Info.plist */,
+				B00318CE1E09634900CFC81A /* test.json */,
+				B00318D21E0963E500CFC81A /* TestModel.swift */,
 			);
 			path = Swift3ExentionDemo;
 			sourceTree = "<group>";
@@ -123,6 +134,15 @@
 				B00318BD1E095B6900CFC81A /* Info.plist */,
 			);
 			path = Swift3ExentionDemoUITests;
+			sourceTree = "<group>";
+		};
+		B00318C91E095B7B00CFC81A /* Swift3Exention */ = {
+			isa = PBXGroup;
+			children = (
+				B00318CA1E095BB000CFC81A /* DictionaryToModel.swift */,
+				B00318CC1E095C8B00CFC81A /* BaseFoundation.swift */,
+			);
+			path = Swift3Exention;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -233,6 +253,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B00318A61E095B6800CFC81A /* LaunchScreen.storyboard in Resources */,
+				B00318CF1E09634900CFC81A /* test.json in Resources */,
 				B00318A31E095B6800CFC81A /* Assets.xcassets in Resources */,
 				B00318A11E095B6800CFC81A /* Main.storyboard in Resources */,
 			);
@@ -260,7 +281,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				B003189E1E095B6800CFC81A /* ViewController.swift in Sources */,
+				B00318CD1E095C8B00CFC81A /* BaseFoundation.swift in Sources */,
+				B00318D31E0963E500CFC81A /* TestModel.swift in Sources */,
 				B003189C1E095B6800CFC81A /* AppDelegate.swift in Sources */,
+				B00318CB1E095BB000CFC81A /* DictionaryToModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

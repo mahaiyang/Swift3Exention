@@ -12,7 +12,32 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        let path = Bundle.main.path(forResource: "test", ofType: "json")
+        
+        guard let tempPath = path else{
+            
+            return
+        }
+        
+        let pathUrl = URL.init(fileURLWithPath: tempPath)
+        
+        let data:NSData? = NSData.init(contentsOf: pathUrl)
+        
+        
+        let jsonObject:[String:Any] = try! JSONSerialization.jsonObject(with: data as! Data, options: JSONSerialization.ReadingOptions.mutableContainers) as! Dictionary
+        
+        
+        let array:[TestModel] = TestModel.objectArrayWithKeyValuesArray(array: jsonObject["data"] as! NSArray) as! [TestModel]
+        
+        let model:TestModel = array[0]
+        
+        print(model.description)
+        
+        
+        
+        
+        
     }
 
     override func didReceiveMemoryWarning() {

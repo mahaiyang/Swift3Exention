@@ -1,0 +1,43 @@
+{
+    "data": [
+           
+           {
+           
+           "medicine_id": 123,
+           
+           "name": "布洛芬缓释片",
+           
+           "app_medicine_code": "buluofen",
+           
+           "upc":"60392038392302",
+           
+           "medicine_no":"B20020993",
+           
+           "spec":"0.5g*10粒",
+           
+           "price": 12.5,
+           
+           "stock":10,
+           
+           "category_code": "901600",
+           
+           "category_name": "退烧止痛",
+           
+           "is_sold_out": 1,
+           
+           "sequence":10,
+           
+           "ctime":1392883362,
+           
+           "utime":1392883362,
+           
+           "090015":"孕妇食用，谨遵医生叮嘱",
+           
+           "090025":"3个月",
+           
+           
+           }
+           
+           ]
+    
+}
